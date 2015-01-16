@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Home Switch Home</title>
-        <link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" />
         <link href="style.css" rel="stylesheet" />
     </head>
 
@@ -46,7 +46,7 @@
 
                     <div>
                         <label for="surfaceInterieure">Taille du logement (en m²) :</label>
-                        <input type="number" name="surfaceInterieur"/>
+                        <input type="number" name="surfaceInterieure"/>
                     </div>
 
                     <div>
@@ -55,8 +55,8 @@
                     </div>
 
                     <div>
-                        <label for="surfaceExterieur">Superficie exterieure :</label>
-                        <input type="number" name="surfaceExterieur"/>
+                        <label for="surfaceExterieure">Superficie exterieure :</label>
+                        <input type="number" name="surfaceExterieure"/>
                     </div>
 
                     <div>
@@ -73,12 +73,12 @@
 
                     <div>
                         <label for="description">Description du logement :</label>
-                        <textarea name="description" rows="8" cols="45"> </textarea>
+                        <textarea name="description" rows="8" cols="45"></textarea>
                     </div>
                     
                     <div>
                         <label for="descriptionProximite">Description de la proximité :</label>
-                        <textarea name="descriptionProximite" rows="8" cols="45"> </textarea>
+                        <textarea name="descriptionProximite" rows="8" cols="45"></textarea>
                     </div>
 
                 
