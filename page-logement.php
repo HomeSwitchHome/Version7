@@ -1,7 +1,7 @@
 <?php require_once("config.php"); 
 $idLogement  = $_GET["idLogement"] ;
 //$idLogement = 4;
-$logement_info = $bdd -> prepare('SELECT nombrePieces, description, titre_annonce, surfaceInterieur, surfaceExterieur, nombreLitsSimples, nombreLitsDoubles, descriptionProximite, membres_idMembres, types_idTypes
+$logement_info = $bdd -> prepare('SELECT nombrePieces, description, titre_annonce, surfaceInterieure, surfaceExterieure, nombreLitsSimples, nombreLitsDoubles, descriptionProximite, membres_idMembres, types_idTypes
                                     FROM logements WHERE id = '.$idLogement);
 $logement_info -> execute();
 
@@ -86,7 +86,7 @@ $result = $logement_info -> fetch();
 	                            <ul class="infosPerso">
 	                        
 	                                <li>Type : <?php echo $result['types_idTypes'];?></li>
-	                                <li>Superficie : <?php echo $result['surfaceInterieur'];?> m2 en intérieur, <?php echo $result['surfaceExterieur'];?> m2 en exterieur</li>
+	                                <li>Superficie : <?php echo $result['surfaceInterieure'];?> m2 en intérieur, <?php echo $result['surfaceExterieure'];?> m2 en exterieur</li>
 	                                <li>Chambres : <?php echo $result['nombreLitsDoubles'];?> lit(s) double(s), <?php echo $result['nombreLitsSimples'];?> lit(s) simple(s)</li>
 
 	                            </ul>
